@@ -4,8 +4,9 @@
 <div class="container">
     <h1>Detail Pembelian</h1>
     <a href="{{ route('pembelian.index') }}" class="btn btn-secondary mb-3">Kembali</a>
+    <button onclick="printNota()" class="btn btn-primary mb-3">Cetak Nota</button>
 
-    <div class="card">
+    <div class="card" id="nota">
         <div class="card-header">
             Informasi Pembelian
         </div>
@@ -35,4 +36,14 @@
         </div>
     </div>
 </div>
+
+<script>
+    function printNota() {
+        var printContent = document.getElementById('nota').innerHTML;
+        var originalContent = document.body.innerHTML;
+        document.body.innerHTML = printContent;
+        window.print();
+        document.body.innerHTML = originalContent;
+    }
+</script>
 @endsection

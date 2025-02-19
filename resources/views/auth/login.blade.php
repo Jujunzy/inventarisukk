@@ -10,12 +10,12 @@
           <!-- Logo -->
           <div class="app-brand justify-content-center">
             <a href="{{ url('/') }}" class="app-brand-link gap-2">
-              <span class="app-brand-text demo text-body fw-bolder">Sneat</span>
+              <span class="app-brand-text demo text-body fw-bolder">Login</span>
             </a>
           </div>
           <!-- /Logo -->
-          <h4 class="mb-2">Welcome to Sneat! 👋</h4>
-          <p class="mb-4">Please sign-in to your account and start the adventure</p>
+          <h4 class="mb-2">Selamat Datang Di Hijab Glow</h4>
+          <p class="mb-4">Tolong Masukan Akun Anda </p>
 
           <!-- Laravel Login Form -->
           <form id="formAuthentication" class="mb-3" action="{{ route('login') }}" method="POST">
@@ -45,7 +45,7 @@
                 <label class="form-label" for="password">Password</label>
                 @if (Route::has('password.request'))
                   <a href="{{ route('password.request') }}">
-                    <small>Forgot Password?</small>
+                    <small>Lupa Pasword?</small>
                   </a>
                 @endif
               </div>
@@ -71,19 +71,19 @@
             <div class="mb-3">
               <div class="form-check">
                 <input class="form-check-input" type="checkbox" id="remember-me" name="remember" {{ old('remember') ? 'checked' : '' }} />
-                <label class="form-check-label" for="remember-me"> Remember Me </label>
+                <label class="form-check-label" for="remember-me"> Ingat Aku? </label>
               </div>
             </div>
 
             <div class="mb-3">
-              <button class="btn btn-primary d-grid w-100" type="submit">Sign in</button>
+              <button class="btn btn-primary d-grid w-100" type="submit">Masuk</button>
             </div>
           </form>
 
           <p class="text-center">
-            <span>New on our platform?</span>
+            <span>Baru Di Platform Kami?</span>
             <a href="{{ route('register') }}">
-              <span>Create an account</span>
+              <span>Buat Akun</span>
             </a>
           </p>
         </div>

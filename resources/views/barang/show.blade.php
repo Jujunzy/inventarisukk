@@ -15,6 +15,7 @@
             <p><strong>Harga:</strong> Rp {{ number_format($barang->harga, 0, ',', '.') }}</p>
             <p><strong>Stok:</strong> {{ $barang->stok }}</p>
             <p><strong>Supplier:</strong> {{ $barang->supplier->nama_supplier }}</p>
+            <p><strong>Nota:</strong> {{ $barang->nota ?? 'Nota tidak tersedia' }}</p>
         </div>
         <div class="card-footer">
             <a href="{{ route('barang.index') }}" class="btn btn-secondary">Kembali</a>

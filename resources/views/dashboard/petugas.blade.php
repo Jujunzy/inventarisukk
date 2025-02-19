@@ -1,6 +1,8 @@
 @extends('layouts.app_petugas')
 
 @section('content')
+<div class="container-fluid" style="background: linear-gradient(to right, #f8f9fa, #2e4964); min-height: 100vh;">
+    <div class="row">
     <div class="container-fluid">
         <div class="row">
             <!-- Main Content -->
